@@ -12,9 +12,19 @@ void recursion(int x)
 	}
 
 }
+void printTriangle(int n)
+{
+	if(n<1)
+	{}
+	else{
+		recursion(n);
+		cout << "\n";
+		n--;
+		printTriangle(n);
+	}
+}
 int main()
 {
-	recursion(5);
-
+	printTriangle(5);
 
 }
