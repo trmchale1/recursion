@@ -3,7 +3,7 @@
 using namespace std;
 
 void printPowerOfTwoStars(int N){
-        if(N == 0){cout << "*";}
+        if(N == 0){cout << "*"; return;}
         if(N>0){printPowerOfTwoStars(N-1); printPowerOfTwoStars(N-1);}
 
 }
